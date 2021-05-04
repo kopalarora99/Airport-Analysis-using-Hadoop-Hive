@@ -73,6 +73,7 @@ empty otherwise.
 Stops	Number of stops on this flight ("0" for direct)
 
 Equipment	3-letter codes for plane type(s) generally used on this flight, separated by spaces
+# Creating table
 
 creating table airport for airports_mod.dat: 
 create table airports (airport_id int,airport_name string,airport_city string,airport_country string,airport_faa string,airport_icao string,airport_lat double,airport_long double,airport_alt double,airport_timezone double,airport_dst string,airport_tz string) row format delimited fields terminated by ',';
@@ -82,6 +83,8 @@ create table final_airlines (airlineID string,airline_name string, airline_alias
 
 Creating table route for routes.dat: 
 create table routes (route_iata string,route_airid int,route_source_iata string,route_source_airid int,route_des_iata string,route_des_airid int,route_codeshare string,route_stops int,route_equip string) row format delimited fields terminated by ',';
+
+# Loading Data into tables
 
 LOAD DATA LOCAL INPATH 'airports_mod.dat' OVERWRITE INTO TABLE airports;
 
