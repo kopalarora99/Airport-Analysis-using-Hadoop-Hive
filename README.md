@@ -90,4 +90,4 @@ LOAD DATA LOCAL INPATH 'airports_mod.dat' OVERWRITE INTO TABLE airports;
 
 LOAD DATA LOCAL INPATH 'Final_airlines' OVERWRITE INTO TABLE final_airlines;
 
-LOAD DATA LOCAL INPATH 'routes.dat' INTO TABLE routes;
+LOAD DATA LOCAL INPATH 'routes.dat' OVERWRITE INTO TABLE routes;
