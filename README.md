@@ -4,7 +4,7 @@ Dataset Description
 
 In this use case there are 3 data sets. Final_airlines, routes.dat, airports_mod.dat
 
-AIRPORT TABLE
+#AIRPORT TABLE
 
 Airport ID	Unique OpenFlights identifier for this airport.
 
@@ -33,7 +33,7 @@ DST	Daylight savings time. One of E (Europe), A (US/Canada), S (South America), 
 Tz 	database time Timezone in "tz" (Olson) format, eg. "America/Los_Angeles". zone
  
 
-Air Lines Data set:
+#Air Lines Data set
 
 It contains the following fields:
 
@@ -52,9 +52,7 @@ Callsign Airline callsign.
 Country Country or territory where airline is incorporated.
 
 
-
-
-Routes Table
+#Routes Table
 
 Airline	2-letter (IATA) or 3-letter (ICAO) code of the airline.
 
